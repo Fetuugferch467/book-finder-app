@@ -1,0 +1,83 @@
+/* src/styles/BookFinder.css */
+
+.bookfinder-container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 16px;
+  font-family: Inter, system-ui, Arial, sans-serif;
+}
+
+.bookfinder-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  background: white;
+}
+
+.bookfinder-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.bookfinder-input {
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  width: 100%;
+  outline: none;
+}
+
+.bookfinder-label {
+  font-size: 12px;
+  color: #4b5563;
+  font-weight: 600;
+}
+
+.bookfinder-button {
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid #111827;
+  background: #111827;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.bookfinder-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.bookfinder-ghost {
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  background: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.bookfinder-badge {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.bookfinder-cover {
+  width: 90px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #f3f4f6;
+  display: grid;
+  place-items: center;
+  color: #9ca3af;
+}
+
+.bookfinder-footer {
+  margin-top: 24px;
+  color: #6b7280;
+  font-size: 12px;
+  text-align: center;
+}
