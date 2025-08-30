@@ -1,0 +1,118 @@
+Project Notes: Book Finder App
+1. Project Overview
+
+Purpose: Build a user-friendly book search application for Alex, a college student.
+
+Key Goals:
+
+Search books by Title and Author
+
+Apply filters (Min/Max Year)
+
+Sort results by relevance, year, or title
+
+Handle pagination, loading, errors, and empty states
+
+Display results as cards with cover, title, author(s), year, and Open Library link
+
+API: Open Library Search API
+
+2. Technology Stack
+
+Framework: React
+
+Styling: Separate CSS file (App.css)
+
+State Management: React useState, useEffect, useMemo
+
+Data Fetching: Native fetch API
+
+Deployment Options: CodeSandbox, StackBlitz, Netlify, Vercel
+
+3. Key Features
+
+Search Form
+
+Inputs: Title, Author
+
+Filters: Min Year, Max Year
+
+Sort: Relevance, Year ↑/↓, Title A-Z
+
+Search triggered on Enter key or Search button
+
+Book Display
+
+Grid of cards, each showing:
+
+Cover image (or placeholder)
+
+Title
+
+Author(s)
+
+Year
+
+Link to Open Library
+
+Pagination
+
+Client-side, 12 books per page
+
+Controls: Prev / Next buttons
+
+Shows current page / total pages
+
+State Handling
+
+Loading spinner while fetching
+
+Error message if API fails
+
+Empty state if no results found
+
+Clear Function
+
+Resets search query, filters, sort, and results
+
+4. Component Logic
+
+State Variables:
+
+title, author, minYear, maxYear, sortBy, books, loading, error, page
+
+Fetch Logic:
+
+Uses fetch to call Open Library API with query parameters
+
+Updates books and resets page to 1
+
+Processing Logic (useMemo):
+
+Filters: Year range
+
+Sorting: Relevance, Year Asc/Desc, Title
+
+Pagination: Slice books array per page
+
+Clear Function: Resets all state to defaults
+
+5. Styling
+
+External CSS (App.css) used
+
+Responsive grid layout
+
+Cards with consistent padding, border, and image aspect ratio
+
+Simple footer for attribution
+
+6. How to Run
+
+Clone the repository
+
+npm install
+
+npm start
+
+Open in browser: http://localhost:3000
