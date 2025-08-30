@@ -1,12 +1,36 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# 📚 Book Finder App
 
-## Expanding the ESLint configuration
+## 👤 User Persona
+- Name: Alex
+- Occupation: College Student
+- Need: Search books efficiently by Title, Author, and filters
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Features
+- Search by **Title** and **Author**
+- Filters: **Min Year** and **Max Year**
+- Sort: **Relevance**, **Year Asc/Desc**, **Title A–Z**
+- Client-side **pagination** (12 items per page)
+- Loading, Error, and Empty states
+- Clear button to reset all filters and results
+- Book cards with cover, title, author(s), year, and Open Library link
+
+---
+
+## 🛠️ Tech Stack
+- **Framework:** React
+- **Styling:** CSS (App.css)
+- **State Management:** useState, useEffect, useMemo
+- **Data Fetching:** fetch API
+- **Deployment:** CodeSandbox, StackBlitz, Netlify, or Vercel
+
+---
+You can view a live demo on  [StackBlitz](https://stackblitz.com/) by pasting your `App.jsx` code there.## ▶️ Running the App
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/your-username/book-finder.git
+   cd book-finder
